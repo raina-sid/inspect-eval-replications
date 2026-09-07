@@ -30,3 +30,9 @@ Two files carry a caveat:
   so a prefix is unbiased and the reason it stopped is independent of the outcomes.
 - `gpt-4-0613__default_high_exhausted__n1.jsonl` was a deliberate single-call pre-flight
   check before committing spend to the remaining 29; it pools with them.
+
+## probes/
+
+`probes/` holds exploratory runs that are **not** part of the published cells and must not be
+pooled with them: different prompt variants, different questions, and in one case a defective
+stimulus retained deliberately. Start at `probes/README.md`.
