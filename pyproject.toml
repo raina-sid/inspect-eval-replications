@@ -17,6 +17,9 @@ dependencies = [
 dev = [
     "pytest>=9.1.1",
     "ruff>=0.16.3",
+    # for scripts/probe_ipi_canary_robustness.py, which calls inspect_evals' own detector rather
+    # than a copy of it. Dev-only: nothing in src/ imports it.
+    "inspect-evals",
 ]
 
 [build-system]
